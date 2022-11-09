@@ -1,0 +1,247 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+#topBox {
+    /* border: 1px solid green; */
+    width: 97%;
+    margin: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#topBox>div:nth-child(1){
+    /* border: 1px solid red; */
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#topBox>div:nth-child(1)>p:hover{
+    color: blue;
+}
+#topBox>div:nth-child(1)>img {
+    width: 60%;
+}
+#topBox>div:nth-child(2) {
+    /* border: 1px solid red; */
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#topBox>div:nth-child(2)>p:hover{
+    color: blue;
+}
+/*---------------------------------*/
+
+#container{
+    /* border: 1px solid red; */
+    width: 96%;
+    margin: auto;
+    margin-top: 50px;
+}
+/*-----------------------------------*/
+
+.middle {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.check{
+    /* border: 1px solid blue; */
+    width: 33%;
+    margin: auto;
+    padding: 25px 5px 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.check+hr{
+    width: 95%;
+    margin: auto;
+}
+.putInput{
+    /* border: 1px solid red; */
+    width: 92%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 20px;
+}
+.putInput>div {
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+.putInput>div:nth-child(1) {
+    grid-area: 1/1/2/3;
+}
+.tick{
+    /* border: 1px solid green; */
+    width: 20%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    /* border: 1px solid red; */
+    color: white;
+    background-color: rgb(81, 81, 221);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 170px;
+    margin: 20px auto;
+    padding: 17px 15px;
+    cursor: pointer;
+}
+
+.onImgWrite{
+    /* border: 1px solid blue; */
+    margin: 70px 0px;
+    text-align: justify;
+}
+.onImgWrite>img{
+    width: 100%;
+    border-radius: 5px;
+}
+.onImgWrite>div{
+    /* border: 1px solid red; */
+    color: white;
+    position: absolute;
+    margin: 130px 0px 0px 25px;
+    border-radius: 10px;
+    width: 450px;
+    padding: 15px 10px;
+}
+.onImgWrite>div>h1{
+    margin: 20px;
+    font-size: 45px;
+}
+.onImgWrite>div>p{
+    margin: 20px;
+}
+.onImgWrite>div>div{
+    /* border: 1px solid red; */
+    background-color: blue;
+    width: 150px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+/*====================================*/
+
+.app{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.app>img{
+    width: 32%;
+}
+.appMiddle{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.appMiddle>h2{
+    margin: 30px 0px;
+}
+.access{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.access>input{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 20px;
+}
+.access>div{
+    /* border: 1px solid red; */
+    color: white;
+    background-color: rgb(101, 101, 236);
+    padding: 16px 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.appLast{
+    /* border: 1px solid rebeccapurple; */
+    width: 13%;
+    margin-right: 15px;
+    text-align: center;
+}
+.appLast>img{
+    width: 100%;
+}
+.ad{
+    border: 1px solid grey;
+    display: flex;
+    border-radius: 10px;
+    margin: 50px 0px;
+}
+.ad>img{
+    width: 55%;
+    height: 250px;
+    border-radius: 10px 0px 0px 10px;
+}
+.ad>div{
+    margin: 80px 0px 0px 30px;
+}
+.plan>img{
+    margin: 50px 0px;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+.plan>div{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 270px 0px 0px 20px;
+}
+.plan~p{
+    margin: 5px;
+    text-align: center;
+}
+.plan~p+p{
+    color: rgb(101, 101, 236);
+}
+.bottom{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.bottom>div>p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(101, 101, 236);
+}
+.bottom>div>h4, .bottom>h2{
+    margin-top: 20px
+}
+.bottom>h2{
+    font-family: URW Chancery L, cursive;
+}
+.footer{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 50px;
+}
+.footer>p{
+    margin: 20px 0px 50px 0px;
+    font-size: 15px;
+}
