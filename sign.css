@@ -1,0 +1,68 @@
+*{
+    font-family: sans-serif;
+}
+.nav{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav>p{
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav>img{
+    width: 15%;
+    cursor: pointer;
+}
+#container{
+    width: 33%;
+    margin: auto;
+}
+.google{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 10px;
+}
+.google>img{
+    width: 15%;
+}
+.google>p{
+    margin-left: 70px;
+    color: white;
+}
+.google+p{
+    text-align: center;
+}
+#container>input{
+    display: block;
+    width: 98%;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.ptag{
+    font-size: 14px;
+}
+.sign{
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer{
+    margin-top: 20px;
+    text-align: center;
+
+}

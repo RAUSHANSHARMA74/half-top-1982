@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelPort</title>
+    <title>Trips</title>
     <link rel="icon" href="titlelogo.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="trips.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
-    <!-- creating the header part of website -->
     <div id="topBox">
         <div class="navImg">
             <img src="logo.jpg" alt="">
@@ -29,68 +29,20 @@
     </div>
     <hr>
 
-    <!-- start the container part -->
+    <h1 class="trips">Trips</h1>
+    <div class="middleImg">
+        <img src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg" alt="">
+    </div>
+    <div class="sign">
+        <p>Sign in or crate free account</p>
+        <div>
+            <p>Don't have an account?</p>
+            <p>Use your itinerary number and email to find a booking</p>
+        </div>
+    </div>
+
 
     <div id="container">
-
-        <!-- choose your travel  -->
-        <div class="middle">
-            <div class="check">
-                <p>Stays</p>
-                <p>Flights</p>
-                <p>Cars</p>
-                <p>Paxkages</p>
-                <p>Things to do</p>
-            </div>
-            <hr>
-            <div class="stays"></div>
-            <div class="flights">
-                <div class="flightsTop">
-                    <div class="left" >
-                        <p>Return</p>
-                        <p>One-Way</p>
-                        <p>Multi-city</p>
-                    </div>
-                    <div class="right">
-                       <p>traveller</p>
-                       <p>Economy</p>
-                    </div>
-                </div>
-                <div class="flightBottom">
-                    <div>Leaving from</div>
-                    <div>Going to</div>
-                    <div>Departin</div>
-                    <div>Returning</div>
-                </div>
-            </div>
-
-
-
-            <div class="cars"></div>
-            <div class="packages"></div>
-            <div class="things"></div>
-
-            
-            <div class="tick">
-                <p>Add a flight</p>
-                <p>Add a car</p>
-            </div>
-            <div class="search">Search</div>
-        </div>
-
-        <!-- creating a reward part  -->
-        <div class="onImgWrite">
-            <div>
-                <h1>Save instantly with Expedia Rewards</h1>
-                <p>You can enjoy access to perks like Member Prices, saving an average of 15% on thousands of hotels.
-                    Terms may apply</p>
-                <div>See Member Prices</div>
-            </div>
-            <img src="https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg" alt="">
-        </div>
-
-        <!-- get the app part  -->
-
         <div class="app">
             <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="">
             <div class="appMiddle">
@@ -112,31 +64,6 @@
                 <p>Scan the QR code</p>
             </div>
         </div>
-
-        <!-- Ad part of the container -->
-
-        <div class="ad">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgq3xYipbeRyye4QOtD4Ydp0FEQLhV82sPw&usqp=CAU"
-                alt="">
-            <div>
-                <img src="https://tpc.googlesyndication.com/simgad/5197503855605148686?" alt="">
-                <h2>Discover USA</h2>
-                <P>From beaches and national parks to iconic big cities, the USA aeaits you.</P>
-            </div>
-        </div>
-
-        <!-- plan part of the container -->
-        <div class="plan">
-            <div>
-                <p>Plan ahead and save</p>
-                <p>Book 60 days in advance for 20% off select stays.</p>
-            </div>
-            <img src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" alt="">
-        </div>
-
-        <!-- All feature part is below -->
-        <p>Explore a world of travel with travelPort</p>
-        <p>Discover new places and experiences</p>
 
         <div class="bottom">
             <h2>TravelPort group</h2>
@@ -183,9 +110,31 @@
         </div>
     </div>
 
-    <!-- end the container part of the website -->
 
 </body>
 
 </html>
-<script src="index.js"></script>
+
+<script>
+    let home = document.querySelector("#topBox>div:nth-child(1)>img")
+    home.addEventListener("click", () => {
+        window.location.href = "index.html"
+    })
+
+    let support = document.querySelector(".navRight>p:nth-child(4)")
+    support.addEventListener("click", () => {
+        window.location.href = "support.html"
+    })
+
+
+    let trips = document.querySelector(".navRight>p:nth-child(5)")
+    trips.addEventListener("click", () => {
+        window.location.href = "trips.html"
+    })
+
+    let sign = document.querySelector(".navRight>p:nth-child(6)")
+    sign.addEventListener("click", () => {
+        window.location.href = "sign.html"
+    })
+
+</script>

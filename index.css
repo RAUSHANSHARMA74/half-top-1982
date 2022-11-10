@@ -24,7 +24,7 @@
 #topBox>div:nth-child(1)>p:hover{
     color: blue;
 }
-#topBox>div:nth-child(1)>img {
+#topBox>div:nth-child(1)>img{
     width: 60%;
 }
 #topBox>div:nth-child(2) {
@@ -65,7 +65,7 @@
     width: 95%;
     margin: auto;
 }
-.putInput{
+.stays{
     /* border: 1px solid red; */
     width: 92%;
     margin: 25px auto;
@@ -73,16 +73,41 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 10px 20px;
 }
-.putInput>div {
+.stays>div {
     border: 1px solid gray;
     border-radius: 10px;
     height: 15px;
     padding: 20px;
     cursor: pointer;
 }
-.putInput>div:nth-child(1) {
+.stays>div:nth-child(1) {
     grid-area: 1/1/2/3;
 }
+
+.flights{
+    border: 1px solid red;
+}
+.flightsTop{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tick{
     /* border: 1px solid green; */
     width: 20%;
@@ -183,6 +208,7 @@
 }
 .appLast>img{
     width: 100%;
+    border-radius: 10px;
 }
 .ad{
     border: 1px solid grey;
