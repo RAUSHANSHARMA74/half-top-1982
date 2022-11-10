@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+    <link rel="icon" href="titlelogo.png">
+    <link rel="stylesheet" href="support.css">
+
+</head>
+
+<body>
+    <!-- creating the header part of website -->
+    <div id="topBox">
+        <div class="navImg">
+            <img src="logo.jpg" alt="">
+            <p>More travel</p>
+        </div>
+        <div class="navRight">
+            <p style="font-size: 20px;" class="fa fa-globe">
+            <p>English</p>
+            </p>
+            <p>Support</p>
+            <p>Trips</p>
+            <p class="fa fa-bell" style="font-size: 20px;"></p>
+            <p>Sign in</p>
+        </div>
+    </div>
+    <hr>
+    <div class="search">
+        <div>
+            <h1>Customer Service</h1>
+            <input type="text" placeholder="Search">
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVJsooElVs1QPfvUOA5KjXyT2KY8rQJ23sdA&usqp=CAU"
+            alt="">
+    </div>
+
+    <div class="container">
+        <div class="contact">
+            <p>we're here to help.</p>
+            <p>Contact us</p>
+        </div>
+
+        <div class="topic">
+            <div>
+                <p>Browse Help Topics</p>
+                <div class="childtopic">
+                    <h2>Customer Service</h2>
+                    <p>Change & Cancel</p>
+                    <p>Payment & Receipts</p>
+                    <p>Refunds</p>
+                    <p>Travel Documents</p>
+                    <p>Account Security</p>
+                    <p>Travel Alerts</p>
+                    <h2>Travel Rewards</h2>
+                </div>
+            </div>
+            <div>
+                <p>Popular Topic</p>
+                <div class="childtopic">
+                    <h2>> How we order your search results</h2>
+                    <h2>> Book a flight using an airline credit</h2>
+                    <h2>> 'Private host' listings</h2>
+                    <h2>> Online flight check-in</h2>
+                    <h2>> Government travel alerts and warnings</h2>
+                    <h2>> Earn Travel Rewards tier status</h2>
+                    <h2>> Earn and use your Travel Rewards points</h2>
+                    <h2>> View and claim missing Expedia Rewards points</h2>
+                    <h2>> Conditions of carriage</h2>
+                    <h2>> Changes to Travel Rewards</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Add your property to Expedia</h3>
+
+    <div class="box">
+        <div class="childbox">
+            <h1>Download the Travel app</h1>
+            <div class="num">
+                <input type="text" placeholder="Enter your phone number">
+                <div>Send</div>
+            </div>
+            <div>
+                <p>Access to chat support</p>
+                <p>Free cancellation on select hotels</p>
+                <p>Make changes to your booking</p>
+            </div>
+            <p>By providing your number, you agree to receive a one-time automated text message with a link to get the
+                app. Standard text message rates may apply.</p>
+        </div>
+        <div>
+            <p>Or scan the QR code!</p>
+            <img src="https://a.travel-assets.com/mad-service/footer-legal-qr-codes/27.jpg" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+    let home = document.querySelector("#topBox>div:nth-child(1)>img")
+    home.addEventListener("click", () => {
+        window.location.href = "index.html"
+    })
+
+    let trips = document.querySelector(".navRight>p:nth-child(5)")
+    trips.addEventListener("click", () => {
+        window.location.href = "trips.html"
+    })
+
+    let support = document.querySelector(".navRight>p:nth-child(4)")
+    support.addEventListener("click", () => {
+        window.location.href = "support.html"
+    })
+
+    let sign = document.querySelector(".navRight>p:nth-child(6)")
+    sign.addEventListener("click", () => {
+        window.location.href = "sign.html"
+    })
+
+
+</script>

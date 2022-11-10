@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="titlelogo.png">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <p class="fa fa-angle-left"></p>
+        <img src="logo.jpg" alt="">
+    </div>
+    <hr>
+
+
+    <div id="container">
+        <h1>Sign in</h1>
+        <p>Save an average of 15% on thousands of hotels as a member—it’s always free.</p>
+        <div class="google">
+            <img src="https://cdn.icon-icons.com/icons2/1269/PNG/512/1497553309-101_84843.png" alt="">
+            <p>Sign in with Google</p>
+        </div>
+        <p>or</p>
+        <input type="email" placeholder="Email address">
+        <input type="password" placeholder="Password">
+        <p>Keep me signed in</p>
+        <div class="ptag">
+            <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not
+                select this on shared devices.</p>
+            <p>By signing in, I agree to the <a href=""> Travel Terms and Conditions</a> , <a href="">Privacy Statement
+                </a> and
+                <a href="">Travel Rewards Terms and Conditions.</a>
+            </p>
+        </div>
+        <div class="sign">Sign in</div>
+        <div class="footer">
+            <a href="">Forgot password ?</a>
+            <p>Don't have an account ?<a href="">Create one</a></p>
+            <p>Other Ways to sign in</p>
+            <p class="fa fa-apple"></p>
+            <p class="fa fa-facebook"></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    let home = document.querySelector(".nav>img")
+    home.addEventListener("click", () => {
+        window.location.href = "index.html"
+    })
+
+
+    let trips = document.querySelector(".nav>p")
+    trips.addEventListener("click", () => {
+        window.location.href = "trips.html"
+    })
+</script>
