@@ -38,6 +38,121 @@
 #topBox>div:nth-child(2)>p:hover{
     color: blue;
 }
+.navImg>p{
+    position: relative;
+
+}
+.dropdown>p>a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.dropdown>p{
+    padding: 7px 5px;
+}
+.dropdown>p:hover{
+    background-color: skyblue;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    padding: 10px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel:hover .dropdown{
+    display: block;
+}
+.sign{
+    text-align: center;
+}
+.sign:hover .childsign{
+    display: block;
+}
+.childsign{
+    border: 1px solid grey;
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: 400px;
+    top: 55px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.childsign>div{
+    border: 1px solid grey;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    
+}
+.childsign>h2{
+    text-align: left;
+    margin: 20px 0px;
+}
+.childsign>a{
+    text-decoration: none;
+    color: black;
+}
+.childsign>a:hover{
+    color: blue;
+}
+.childsign>p{
+    text-align: left;
+    margin: 25px 0px;
+}
+
+
+.select{
+    border: 1px solid gray;
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    width: 650px;
+    left: 400px;
+    align-content: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.english:hover .select{
+    display: block;
+}
+.select>p{
+    font-size: 20px;
+    padding: 10px;
+}
+.select>hr{
+    margin-bottom: 40px;
+}
+.select>select{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+}
+.select>div{
+    border: 1px solid red;
+    background-color: blue;
+    color: white;
+    margin-top: 250px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
 /*---------------------------------*/
 
 #container{
@@ -61,14 +176,18 @@
     justify-content: space-between;
     cursor: pointer;
 }
+.check>p:hover{
+    text-decoration: underline;
+    color: blue;
+}
 .check+hr{
     width: 95%;
     margin: auto;
 }
 .stays{
-    /* border: 1px solid red; */
     width: 92%;
-    margin: 25px auto;
+    margin:auto;
+    margin-top: -30px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px 20px;
@@ -84,37 +203,183 @@
     grid-area: 1/1/2/3;
 }
 
+.stay{
+    width: 92%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 20px;
+}
+.stay>div {
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+.stay>div:nth-child(1) {
+    grid-area: 1/1/2/3;
+}
+
+
 .flights{
-    border: 1px solid red;
+    width: 95%;
+    margin: auto;
+    margin-top: -50px;
 }
 .flightsTop{
     display: flex;
+    justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tick{
-    /* border: 1px solid green; */
-    width: 20%;
-    margin-left: 50px;
+.left{
+    display: flex;
+}
+.left>p{
+    margin: 20px 0px;
+    padding: 14px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.left>p:hover{
+    background-color: skyblue;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.right>p{
+    color: blue;
+    padding: 14px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.right>p:hover{
+    text-decoration: underline;
+}
+.flightBottom{
     display: flex;
     justify-content: space-between;
 }
+.flightBottom>div{
+    border: 1px solid grey;
+    width: 200px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.flightBottom>div:nth-child(1){
+    width: 355px;
+}
+.flightBottom>div:nth-child(2){
+    width: 355px;
+}
+
+.cars{
+    margin: 10px 40px;
+}
+.topcars{
+    display: flex;
+}
+.topcars>p{
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.topcars>p:hover{
+    background-color: skyblue;
+}
+.bottomcars{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.bottomcars>div{
+    border: 1px solid grey;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bottomcars>div:nth-child(1){
+    grid-area: 1/1/2/3;
+}
+.bottomcars>div:nth-child(2){
+    grid-area: 1/3/2/5;
+}
+
+.packages{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: -30px;
+}
+.packages>p{
+    margin: 20px;
+}
+.childPackages1{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: end;
+}
+.childPackages1>p{
+    /* border: 1px solid red; */
+    padding: 10px 15px;
+    color: blue;
+    cursor: pointer;
+}
+.childPackages2{
+    /* border: 1px solid blueviolet; */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+.childPackages2>div{
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.childPackages2>div:nth-child(1){
+    grid-area: 1/1/2/3;
+}
+.childPackages2>div:nth-child(2){
+    grid-area: 1/3/2/5;
+}
+.things{
+    width: 95%;
+    margin: auto;
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.things>div{
+    border: 1px solid gray;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.things>div:nth-child(1){
+    grid-area: 1/1/2/4;
+}
+
+
+.tick{
+    width: 20%;
+    margin: 10px 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket{
+    width: 20%;
+    margin: 10px 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .search{
     /* border: 1px solid red; */
     color: white;
@@ -183,6 +448,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 .access>input{
     height: 50px;
@@ -197,7 +463,6 @@
     background-color: rgb(101, 101, 236);
     padding: 16px 40px;
     border-radius: 10px;
-    margin-bottom: 30px;
     cursor: pointer;
 }
 .appLast{

@@ -91,6 +91,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 .access>input{
     height: 50px;
@@ -105,7 +106,6 @@
     background-color: rgb(101, 101, 236);
     padding: 16px 40px;
     border-radius: 10px;
-    margin-bottom: 30px;
     cursor: pointer;
 }
 .appLast{
