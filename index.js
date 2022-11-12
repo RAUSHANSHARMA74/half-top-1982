@@ -153,10 +153,6 @@ cars.addEventListener("click", () => {
 
 
 
-
-
-
-
 let packages = document.querySelector(".check>p:nth-child(4)")
 packages.addEventListener("click", () => {
     document.querySelector(".stays").innerHTML = ""

@@ -10,6 +10,7 @@
     margin: auto;
     margin: 10px;
     display: flex;
+    font-size: 17px;
     justify-content: space-between;
     align-content: center;
 }
@@ -29,7 +30,7 @@
 }
 #topBox>div:nth-child(2) {
     /* border: 1px solid red; */
-    width: 350px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,13 +89,19 @@
 .childsign>div{
     border: 1px solid grey;
     background-color: blue;
+    text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 15px;
     margin: 15px 0px;
     border-radius: 10px;
-    
 }
+.childsign>div>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
 .childsign>h2{
     text-align: left;
     margin: 20px 0px;
@@ -111,14 +118,13 @@
     margin: 25px 0px;
 }
 
-
 .select{
     border: 1px solid gray;
     background-color: #ffffff;
     display: none;
     position: absolute;
     width: 650px;
-    left: 400px;
+    left: 500px;
     align-content: center;
     padding: 15px;
     border-radius: 10px;

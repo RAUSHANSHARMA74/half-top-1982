@@ -28,8 +28,8 @@
             <p>Sign in with Google</p>
         </div>
         <p>or</p>
-        <input type="email" placeholder="Email address">
-        <input type="password" placeholder="Password">
+        <input id="email" type="email" placeholder="Email address">
+        <input id="password" type="password" placeholder="Password">
         <p>Keep me signed in</p>
         <div class="ptag">
             <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not
@@ -54,11 +54,49 @@
 
 </html>
 <script>
+
+    let getData = JSON.parse(localStorage.getItem("sign"))
+
+
+    let sign = document.querySelector(".sign")
+    sign.addEventListener("click", () => {
+
+        let email = document.querySelector("#email").value;
+        let password = document.querySelector("#password").value;
+
+        let em = []
+        let pass = []
+        getData.forEach((element) => {
+            em.push(element.email)
+            pass.push(element.password)
+        })
+        var flag = "NO"
+        for (let x = 0; x < em.length; x++) {
+            if (email == "" || password == "") {
+                alert("please fill all detail")
+                break;
+            } else if (em[x] == email && pass[x] == password) {
+                flag = "YES"
+                break;
+            }
+        }
+        if (email != "" || password != "") {
+            if (flag == "YES") {
+                alert("login successesfull")
+            } else {
+                alert("first signup ")
+                window.location.href = "signup.html"
+            }
+        }
+
+
+    })
+
+
     let home = document.querySelector(".nav>img")
     home.addEventListener("click", () => {
         window.location.href = "index.html"
     })
-
 
     let trips = document.querySelector(".nav>p")
     trips.addEventListener("click", () => {
