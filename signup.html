@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            width: 55%;
+        }
+
+        .top>img {
+            width: 15%;
+        }
+
+        .top>p {
+            color: blue;
+            font-size: 50px;
+        }
+
+        .container {
+            width: 33%;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .google>img {
+            width: 13%;
+        }
+
+        .google {
+            background-color: blue;
+            display: flex;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .google>h2 {
+            margin-left: 60px;
+        }
+
+        .google+p {
+            text-align: center;
+        }
+
+        .container>form>input {
+            display: block;
+            width: 98%;
+            height: 50px;
+            font-size: 20px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .cont {
+            color: white;
+            background-color: blue;
+            text-align: center;
+            padding: 17px;
+            border-radius: 10px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <p class="fa fa-angle-left"></p>
+        <img src="logo.jpg" alt="">
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Create an account</h1>
+        <p>Save an average of 15% on thousands of hotels as a member—it’s always free.</p>
+        <div class="google">
+            <img src="https://cdn.icon-icons.com/icons2/1269/PNG/512/1497553309-101_84843.png" alt="">
+            <h2>Sign up with Google</h2>
+        </div>
+        <p>or</p>
+        <form>
+            <input id="email" type="email" placeholder="Email address">
+            <input id="firstname" type="name" placeholder="First name">
+            <input id="secondname" type="name" placeholder="Surname">
+            <input id="password" type="password" placeholder="Password">
+        </form>
+        <h3>Keep me signed in</h3>
+        <p>Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not
+            select this on shared devices.</p>
+        <h3>I'd like to receive travel deals, special offers and other information from TravelPort via email.</h3>
+        <p>By creating an account, I agree to the Expedia <a href=""> Terms and Conditions</a>, <a href=""> Privacy
+                Statement </a> and <a href=""> TravelPort Rewards Terms and Conditions.</a> </p>
+
+        <p class="cont">Continue</p>
+        <div class="footer">
+            <p>Already have an account? <a href="">Sign in</a></p>
+            <p> Other ways to sign up</p>
+            <p class="fa fa-apple"></p>
+            <p class="fa fa-facebook"></p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    let data = JSON.parse(localStorage.getItem("sign")) || []
+    let cont = document.querySelector(".cont")
+    cont.addEventListener("click", () => {
+        let email = document.querySelector("#email").value;
+        let firstname = document.querySelector("#firstname").value;
+        let secondname = document.querySelector("#secondname").value;
+        let password = document.querySelector("#password").value;
+
+        let getvalue = JSON.parse(localStorage.getItem("sign"))
+
+        if (getvalue == null) {
+            let obj = {
+                email, firstname, secondname, password
+            }
+            if (obj.email == "" || obj.firstname == "" || obj.secondname == "" || obj.password == "") {
+                alert("please fill all detail")
+            } else {
+                data.push(obj)
+                localStorage.setItem("sign", JSON.stringify(data))
+            }
+        } else {
+            let arr = []
+            getvalue.forEach((element) => {
+                if (email == element.email) {
+                    arr.push(1)
+                } else {
+                    arr.push(0)
+                }
+            })
+            console.log(arr)
+
+            var flag = "NO"
+            for (let x = 0; x < arr.length; x++) {
+                if (arr[x] == 1) {
+                    flag = "YES"
+                    break;
+                }
+            }
+            console.log(flag);
+            if (flag == "YES") {
+                alert("Email is already register")
+                window.location.href = "sign.html"
+            } else {
+                let obj = {
+                    email, firstname, secondname, password
+                }
+                if (obj.email == "" || obj.firstname == "" || obj.secondname == "" || obj.password == "") {
+                    alert("please fill all detail")
+                } else {
+                    data.push(obj)
+                    localStorage.setItem("sign", JSON.stringify(data))
+                }
+            }
+
+        }
+    })
+
+
+
+
+
+
+    let arrow = document.querySelector(".top>p")
+    arrow.addEventListener("click", () => {
+        window.location.href = "index.html"
+    })
+
+    let img = document.querySelector(".top>img")
+    img.addEventListener("click", () => {
+        window.location.href = "index.html"
+    })
+</script>
