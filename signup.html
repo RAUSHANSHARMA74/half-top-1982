@@ -109,7 +109,7 @@
 
         <p class="cont">Continue</p>
         <div class="footer">
-            <p>Already have an account? <a href="">Sign in</a></p>
+            <p>Already have an account? <a href="sign.html">Sign in</a></p>
             <p> Other ways to sign up</p>
             <p class="fa fa-apple"></p>
             <p class="fa fa-facebook"></p>
@@ -139,6 +139,7 @@
             } else {
                 data.push(obj)
                 localStorage.setItem("sign", JSON.stringify(data))
+                alert("Signup Successful")
             }
         } else {
             let arr = []
@@ -169,8 +170,10 @@
                 if (obj.email == "" || obj.firstname == "" || obj.secondname == "" || obj.password == "") {
                     alert("please fill all detail")
                 } else {
+                    alert("Sign up successful")
                     data.push(obj)
                     localStorage.setItem("sign", JSON.stringify(data))
+                    window.location.href = "sign.html"
                 }
             }
 

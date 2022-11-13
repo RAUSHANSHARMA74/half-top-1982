@@ -8,27 +8,64 @@
     <title>Customer Service</title>
     <link rel="icon" href="titlelogo.png">
     <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <!-- creating the header part of website -->
+
     <div id="topBox">
         <div class="navImg">
             <img src="logo.jpg" alt="">
-            <p>More travel</p>
+            <div class="travel">More travel
+                <div class="dropdown">
+                    <p><a href="stays.html"> <i class="fa fa-building"></i> Stays</a></p>
+                    <p><a href="flights.html"> <i class="fa fa-plane"></i> Flights</a></p>
+                    <p><a href="cars.html"> <i class="fa fa-car"></i> Cars</a></p>
+                    <p><a href="packages.html"> <i class="fa fa-dropbox"></i> packages</a></p>
+                    <p><a href="holiday.html"> <i class="fa fa-inbox"></i> Holiday activities</a></p>
+                    <p><a href="deals.html">Deals</a></p>
+                    <p><a href="Group.html">Groups & meetings</a></p>
+                    <p><a href="mobile.html">Mobile</a></p>
+                </div>
+            </div>
         </div>
         <div class="navRight">
-            <p style="font-size: 20px;" class="fa fa-globe">
-            <p>English</p>
-            </p>
+
+            <div class="english"><i class="fa fa-globe"></i>English
+                <div class="select">
+                    <p>Display settings</p>
+                    <hr>
+                    <select name="" id="">
+                        <option value="">Indian</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Language</option>
+                    </select>
+                    <div>Save</div>
+                </div>
+            </div>
             <p>Support</p>
             <p>Trips</p>
             <p class="fa fa-bell" style="font-size: 20px;"></p>
-            <p>Sign in</p>
+            <div class="sign">Sign in
+                <div class="childsign">
+                    <img src="https://a.travel-assets.com/pricing-claim/sparkle_white.svg" alt="">
+                    <h2>Save an average of 15% on thousands of hotels when you're signed in</h2>
+                    <div> <a href="sign.html">sign in</a></div>
+                    <a href="signup.html">Create a free account</a>
+                    <p>List of favoutites</p>
+                    <p>TravelPort Rewards</p>
+                    <hr>
+                    <p>Feedback</p>
+                </div>
+            </div>
         </div>
     </div>
     <hr>
+
+
     <div class="search">
         <div>
             <h1>Customer Service</h1>
@@ -105,22 +142,25 @@
 
 </html>
 <script>
-    let home = document.querySelector("#topBox>div:nth-child(1)>img")
-    home.addEventListener("click", () => {
+    let navP = document.querySelector("#topBox>div:nth-child(1)>img")
+    navP.addEventListener("click", () => {
         window.location.href = "index.html"
     })
 
-    let trips = document.querySelector(".navRight>p:nth-child(5)")
-    trips.addEventListener("click", () => {
-        window.location.href = "trips.html"
-    })
 
-    let support = document.querySelector(".navRight>p:nth-child(4)")
+    let support = document.querySelector(".navRight>p:nth-child(2)")
     support.addEventListener("click", () => {
         window.location.href = "support.html"
     })
 
-    let sign = document.querySelector(".navRight>p:nth-child(6)")
+
+    let trips = document.querySelector(".navRight>p:nth-child(3)")
+    trips.addEventListener("click", () => {
+        window.location.href = "trips.html"
+    })
+
+
+    let sign = document.querySelector(".navRight>p:nth-child(4)")
     sign.addEventListener("click", () => {
         window.location.href = "sign.html"
     })

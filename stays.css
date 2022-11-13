@@ -1,9 +1,10 @@
-*{
+* {
     font-family: sans-serif;
     font-weight: 100px;
     margin: 0px;
     padding: 0px;
 }
+
 #topBox {
     /* border: 1px solid green; */
     width: 97%;
@@ -14,7 +15,8 @@
     justify-content: space-between;
     align-content: center;
 }
-#topBox>div:nth-child(1){
+
+#topBox>div:nth-child(1) {
     /* border: 1px solid red; */
     width: 280px;
     display: flex;
@@ -22,12 +24,15 @@
     align-items: center;
     cursor: pointer;
 }
-#topBox>div:nth-child(1)>p:hover{
+
+#topBox>div:nth-child(1)>p:hover {
     color: blue;
 }
-#topBox>div:nth-child(1)>img{
+
+#topBox>div:nth-child(1)>img {
     width: 60%;
 }
+
 #topBox>div:nth-child(2) {
     /* border: 1px solid red; */
     width: 400px;
@@ -36,27 +41,33 @@
     align-items: center;
     cursor: pointer;
 }
-#topBox>div:nth-child(2)>p:hover{
+
+#topBox>div:nth-child(2)>p:hover {
     color: blue;
 }
-.navImg>p{
+
+.navImg>p {
     position: relative;
 
 }
-.dropdown>p>a{
+
+.dropdown>p>a {
     display: block;
     text-decoration: none;
     color: black;
     font-size: 20px;
     padding: 10px;
 }
-.dropdown>p{
+
+.dropdown>p {
     padding: 7px 5px;
 }
-.dropdown>p:hover{
+
+.dropdown>p:hover {
     background-color: skyblue;
 }
-.dropdown{
+
+.dropdown {
     display: none;
     position: absolute;
     margin-left: -20px;
@@ -66,16 +77,20 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.travel:hover .dropdown{
+
+.travel:hover .dropdown {
     display: block;
 }
-.sign{
+
+.sign {
     text-align: center;
 }
-.sign:hover .childsign{
+
+.sign:hover .childsign {
     display: block;
 }
-.childsign{
+
+.childsign {
     border: 1px solid grey;
     background-color: white;
     display: none;
@@ -86,7 +101,8 @@
     padding: 15px;
     border-radius: 10px;
 }
-.childsign>div{
+
+.childsign>div {
     border: 1px solid grey;
     background-color: blue;
     text-decoration: none;
@@ -96,29 +112,33 @@
     margin: 15px 0px;
     border-radius: 10px;
 }
-.childsign>div>a{
+
+.childsign>div>a {
     text-decoration: none;
     font-size: 25px;
     color: white;
 }
 
-.childsign>h2{
+.childsign>h2 {
     text-align: left;
     margin: 20px 0px;
 }
-.childsign>a{
+
+.childsign>a {
     text-decoration: none;
     color: black;
 }
-.childsign>a:hover{
+
+.childsign>a:hover {
     color: blue;
 }
-.childsign>p{
+
+.childsign>p {
     text-align: left;
     margin: 25px 0px;
 }
 
-.select{
+.select {
     border: 1px solid gray;
     background-color: #ffffff;
     display: none;
@@ -129,17 +149,21 @@
     padding: 15px;
     border-radius: 10px;
 }
-.english:hover .select{
+
+.english:hover .select {
     display: block;
 }
-.select>p{
+
+.select>p {
     font-size: 20px;
     padding: 10px;
 }
-.select>hr{
+
+.select>hr {
     margin-bottom: 40px;
 }
-.select>select{
+
+.select>select {
     display: block;
     margin-top: 20px;
     font-size: 20px;
@@ -147,8 +171,9 @@
     width: 100%;
     height: 60px;
 }
-.select>div{
-    border: 1px solid red;
+
+.select>div {
+    /* border: 1px solid red; */
     background-color: blue;
     color: white;
     margin-top: 250px;
@@ -159,45 +184,94 @@
     border-radius: 10px;
 }
 
+/*top part navbar*/
 
 
-
-.trips{
-    width: 600px;
-    margin: 20px auto;
-}
-.middleImg{
-    text-align: center;
-}
-.sig{
-    width: 600px;
-    margin: 90px auto;
-}
-.sig>p{
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-.sig>div{
-    border: 1px solid grey;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#container{
-    width: 90%;
+.container{
+    /* border: 1px solid red; */
+    width: 95%;
     margin: auto;
-    margin-top: 150px;
+}
+.container>p{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px 30px;
+}
+.stay{
+    width: 92%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 20px;
+}
+.stay>div {
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+.stay>div:nth-child(1) {
+    grid-area: 1/1/2/3;
+}
+.nexttrip{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.left{
+    border: 1px solid grey;
+    grid-area: 1/1/3/3;
+    border-radius: 10px;
+}
+.left>img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+.left>p, .left>h1{
+    margin: 15px;
+}
+.topright{
+    border: 1px solid grey;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.topright>img{
+    width: 25%;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px;
+}
+.bottomright{
+    border: 1px solid grey;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottomright>img{
+    width: 31%;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.plan>img{
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+.plan>div{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin: 230px 0px 0px 20px;
 }
 
 .app{
     border: 1px solid grey;
+    margin: 70px 0px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -242,6 +316,12 @@
 .appLast>img{
     width: 100%;
     border-radius: 10px;
+}
+.app~h3{
+    text-align: center;
+}
+.app~h3+h3{
+    color: blue;
 }
 .bottom{
     /* border: 1px solid red; */
