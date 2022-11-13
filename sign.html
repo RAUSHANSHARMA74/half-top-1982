@@ -42,7 +42,7 @@
         <div class="sign">Sign in</div>
         <div class="footer">
             <a href="">Forgot password ?</a>
-            <p>Don't have an account ?<a href="">Create one</a></p>
+            <p>Don't have an account ?<a href="signup.html">Create one</a></p>
             <p>Other Ways to sign in</p>
             <p class="fa fa-apple"></p>
             <p class="fa fa-facebook"></p>
@@ -64,33 +64,48 @@
         let email = document.querySelector("#email").value;
         let password = document.querySelector("#password").value;
 
-        let em = []
-        let pass = []
-        getData.forEach((element) => {
-            em.push(element.email)
-            pass.push(element.password)
-        })
-        var flag = "NO"
-        for (let x = 0; x < em.length; x++) {
-            if (email == "" || password == "") {
-                alert("please fill all detail")
-                break;
-            } else if (em[x] == email && pass[x] == password) {
-                flag = "YES"
-                break;
+
+        if (getData == null) {
+            alert("Please Signup First")
+            window.location.href = "signup.html"
+        } else {
+            let em = []
+            let pass = []
+            getData.forEach((element) => {
+                em.push(element.email)
+                pass.push(element.password)
+            })
+            var flag = "NO"
+            var flag1 = "NO"
+            for (let x = 0; x < em.length; x++) {
+                if (email == "" || password == "") {
+                    alert("Please Fill All Detail")
+                    break;
+                } else if (em[x] == email && pass[x] == password) {
+                    flag = "YES"
+                    break;
+                } else if (em[x] == email) {
+                    flag1 = "YES"
+                    break
+                }
             }
-        }
-        if (email != "" || password != "") {
-            if (flag == "YES") {
-                alert("login successesfull")
+            if (flag1 == "YES") {
+                alert("Something is wrong")
             } else {
-                alert("first signup ")
-                window.location.href = "signup.html"
+                if (email != "" || password != "") {
+                    if (flag == "YES") {
+                        alert("login successesfull")
+                    } else {
+                        alert("First Signup ")
+                        window.location.href = "signup.html"
+                    }
+                }
             }
+
+
         }
-
-
     })
+
 
 
     let home = document.querySelector(".nav>img")

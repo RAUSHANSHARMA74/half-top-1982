@@ -1,20 +1,20 @@
-* {
+*{
     font-family: sans-serif;
     font-weight: 100px;
     margin: 0px;
     padding: 0px;
 }
-
 #topBox {
     /* border: 1px solid green; */
-    width: 90%;
-    margin: 10px auto;
+    width: 97%;
+    margin: auto;
+    margin: 10px;
     display: flex;
+    font-size: 17px;
     justify-content: space-between;
     align-content: center;
 }
-
-#topBox>div:nth-child(1) {
+#topBox>div:nth-child(1){
     /* border: 1px solid red; */
     width: 280px;
     display: flex;
@@ -22,24 +22,146 @@
     align-items: center;
     cursor: pointer;
 }
-#topBox>div:nth-child(1)>p:hover {
+#topBox>div:nth-child(1)>p:hover{
     color: blue;
 }
-#topBox>div:nth-child(1)>img {
+#topBox>div:nth-child(1)>img{
     width: 60%;
 }
 #topBox>div:nth-child(2) {
     /* border: 1px solid red; */
-    width: 350px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
-
-#topBox>div:nth-child(2)>p:hover {
+#topBox>div:nth-child(2)>p:hover{
     color: blue;
 }
+.navImg>p{
+    position: relative;
+
+}
+.dropdown>p>a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.dropdown>p{
+    padding: 7px 5px;
+}
+.dropdown>p:hover{
+    background-color: skyblue;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    padding: 10px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel:hover .dropdown{
+    display: block;
+}
+.sign{
+    text-align: center;
+}
+.sign:hover .childsign{
+    display: block;
+}
+.childsign{
+    border: 1px solid grey;
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: 400px;
+    top: 55px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.childsign>div{
+    border: 1px solid grey;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+.childsign>div>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.childsign>h2{
+    text-align: left;
+    margin: 20px 0px;
+}
+.childsign>a{
+    text-decoration: none;
+    color: black;
+}
+.childsign>a:hover{
+    color: blue;
+}
+.childsign>p{
+    text-align: left;
+    margin: 25px 0px;
+}
+
+.select{
+    border: 1px solid gray;
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    width: 650px;
+    left: 500px;
+    align-content: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.english:hover .select{
+    display: block;
+}
+.select>p{
+    font-size: 20px;
+    padding: 10px;
+}
+.select>hr{
+    margin-bottom: 40px;
+}
+.select>select{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+}
+.select>div{
+    border: 1px solid red;
+    background-color: blue;
+    color: white;
+    margin-top: 250px;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
+
+
+
 .container{
     width: 90%;
     margin: auto;

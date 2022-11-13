@@ -217,10 +217,16 @@ thing.addEventListener("click", () => {
     let thing = document.querySelector(".things")
     thing.append(d1, d2, d3)
 
+})
 
-
+let member = document.querySelector(".onImgWrite>div>div")
+member.addEventListener('click', ()=>{
+    window.location.href = "home.html"
 })
 
 
-
+let plan = document.querySelector(".plan>img")
+plan.addEventListener('click', ()=>{
+    window.location.href = "home.html"
+})
 

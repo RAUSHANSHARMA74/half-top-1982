@@ -148,7 +148,7 @@
     height: 60px;
 }
 .select>div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: blue;
     color: white;
     margin-top: 250px;
@@ -159,115 +159,39 @@
     border-radius: 10px;
 }
 
+.head>p:nth-child(1){
+    font-size: 80px;
 
-
-
-.trips{
-    width: 600px;
+}
+.head{
+    /* border: 1px solid red; */
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+.home{
+    /* border: 1px solid red; */
+    width: 90%;
     margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
-.middleImg{
-    text-align: center;
-}
-.sig{
-    width: 600px;
-    margin: 90px auto;
-}
-.sig>p{
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-.sig>div{
-    border: 1px solid grey;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#container{
-    width: 90%;
-    margin: auto;
-    margin-top: 150px;
-}
-
-.app{
-    border: 1px solid grey;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-}
-.app>img{
-    width: 32%;
-}
-.appMiddle{
-    /* border: 1px solid red; */
-    width: 50%;
-}
-.appMiddle>h2{
-    margin: 30px 0px;
-}
-.access{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.access>input{
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid grey;
-    font-size: 20px;
-}
-.access>div{
-    /* border: 1px solid red; */
-    color: white;
-    background-color: rgb(101, 101, 236);
-    padding: 16px 40px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.appLast{
-    /* border: 1px solid rebeccapurple; */
-    width: 13%;
-    margin-right: 15px;
-    text-align: center;
-}
-.appLast>img{
+.home>div>img{
     width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+.home>div{
+    border: 1px solid grey;
     border-radius: 10px;
 }
-.bottom{
-    /* border: 1px solid red; */
-    width: 90%;
-    margin: 50px 0px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+.home>div>h2>i{
+    text-decoration:line-through;
+    font-size: 18px;
+    color: blue;
 }
-.bottom>div>p{
-    margin-top: 20px;
-    font-size: 12px;
-    color: rgb(101, 101, 236);
-}
-.bottom>div>h4, .bottom>h2{
-    margin-top: 20px
-}
-.bottom>h2{
-    font-family: URW Chancery L, cursive;
-}
-.footer{
-    /* border: 1px solid red; */
-    text-align: center;
-    padding: 50px;
-}
-.footer>p{
-    margin: 20px 0px 50px 0px;
-    font-size: 15px;
+.home>div>hr~h2{
+    text-align: right;
+    color:teal;
 }
